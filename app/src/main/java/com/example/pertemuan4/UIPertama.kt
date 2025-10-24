@@ -83,6 +83,7 @@ fun ActivitasPertama(modifier: Modifier){
                             ) {
                                 Text(
                                     text = stringResource(id = R.string.copy),
+                                    modifier = Modifier
 
                                 )
                             }
