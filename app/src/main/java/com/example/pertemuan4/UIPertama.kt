@@ -13,6 +13,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import org.w3c.dom.Text
 
 
 @Composable
@@ -42,7 +43,12 @@ fun ActivitasPertama(modifier: Modifier) {
             .padding(top = 100.dp)
             .fillMaxSize(),
         horizontalAlignment = Alignment.centerHorizontally
-    }
+    } {
+        Text(
+            text = stringResource(id = R.string.prodi)
+            fontSize = 35.sp
+            fontWeight = FontWeight.Bold
+        )
     }
 }
 
