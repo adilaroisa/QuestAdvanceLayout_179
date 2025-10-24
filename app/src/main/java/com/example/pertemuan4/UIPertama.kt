@@ -24,7 +24,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import org.w3c.dom.Text
+
 
 
 @Composable
@@ -47,7 +47,7 @@ fun ActivitasPertama(modifier: Modifier){
         Spacer(modifier = Modifier.height( height = 25.dp))
         Card(
             modifier = Modifier
-                .fillMaxWidth( fraction = if)
+                .fillMaxWidth( fraction = 1f)
                 .padding( all = 12.dp),
             colors = CardDefaults.cardColors(
                 containerColor = Color.DarkGray
