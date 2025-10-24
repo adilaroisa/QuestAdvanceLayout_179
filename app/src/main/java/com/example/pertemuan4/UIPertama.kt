@@ -1,5 +1,7 @@
 package com.example.pertemuan4
 
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -51,15 +53,15 @@ fun ActivitasPertama(modifier: Modifier){
                 containerColor = Color.DarkGray
             )
         ){
-                    Row(){
-                        val gambar = painterResource(id = R.drawable.logoUMY)
-                        image(
-                            painter = gambar,
-                            contentDescription = null,
-                            modifier = Modifier
-                                .size(size = 100.dp)
-                                .padding(all = 5.dp)
-                        )
+            Row(){
+                val gambar = painterResource(id = R.drawable.logoUMY)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(size = 100.dp)
+                        .padding(all = 5.dp)
+                )
                         Spacer(modifier = Modifier.width(widht = 30.dp))
                         Column(){
                             Text(
@@ -74,10 +76,12 @@ fun ActivitasPertama(modifier: Modifier){
                                 fontsize = 20.sp,
                                 color = Color.Yellow,
                                 modifier = Modifier.padding(top = 10.dp)
-                                )
+                            )
+                            Box(
+                                modifier = Modifier
+                                    .fillMaxSize()
+                            )
                 }
-
-
     }
 }
 
