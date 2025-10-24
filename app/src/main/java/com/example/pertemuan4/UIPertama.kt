@@ -24,7 +24,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-
+import androidx.compose.ui.Alignment
 
 
 @Composable
@@ -32,7 +32,7 @@ fun ActivitasPertama(modifier: Modifier){
     Column(
         modifier = Modifier
             .padding(top = 100.dp)
-            .fillMaxSize()
+            .fillMaxSize(),
                 horizontalAlignment = Alignment.CenterHorizontally
     ){
         Text(
@@ -53,7 +53,7 @@ fun ActivitasPertama(modifier: Modifier){
                 containerColor = Color.DarkGray
             )
         ){
-            Row(){
+            Row() {
                 val gambar = painterResource(id = R.drawable.logoUMY)
                 Image(
                     painter = gambar,
@@ -62,36 +62,38 @@ fun ActivitasPertama(modifier: Modifier){
                         .size(size = 100.dp)
                         .padding(all = 5.dp)
                 )
-                        Spacer(modifier = Modifier.width(widht = 30.dp))
-                        Column(){
+                Spacer(modifier = Modifier.width(width = 30.dp))
+                Column() {
+                    Text(
+                        text = stringResource(id = R.string.nama),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
+                    )
+                        Text(
+                            text = stringResource(id = R.string.alamat),
+                            fontSize = 20.sp,
+                            color = Color.Yellow,
+                            modifier = Modifier.padding(top = 10.dp)
+                        )
+                    }
+                }
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                ) {
                             Text(
-                                text = stringResource(id = R.string.nama),
-                                fontSize = 30.sp,
-                                fontFamily = FontFamily.Cursive,
-                                color = Color.White,
-                                modifier = Modifier.padding(top = 15.dp)
-                            )
-                            Text(
-                                text = stringResource(id = R.string.alamat),
-                                fontsize = 20.sp,
-                                color = Color.Yellow,
-                                modifier = Modifier.padding(top = 10.dp)
-                            )
-                            Box(
+                                text = stringResource(id = R.string.copy),
                                 modifier = Modifier
-                                    .fillMaxSize()
-                            ) {
-                                Text(
-                                    text = stringResource(id = R.string.copy),
-                                    modifier = Modifier
-                                        .align(Alignment.BottomCenter)
-                                        .padding(bottom = 50.dp)
-                                )
-                            }
-                            }
+                                    .align(Alignment.BottomCenter)
+                                    .padding(bottom = 50.dp)
+                            )
+                        }
+                    }
                 }
     }
-}
+
 
 
 
