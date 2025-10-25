@@ -32,7 +32,7 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             .padding(horizontal = 24.dp, vertical = 30.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Spacer(modifier = Modifier.height(30.dp))
+        Spacer(modifier = Modifier.height(40.dp))
 
         Image(
             painter = painterResource(id = R.drawable.luna),
