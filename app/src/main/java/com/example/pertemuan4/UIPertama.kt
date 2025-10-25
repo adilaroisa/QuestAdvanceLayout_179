@@ -54,7 +54,7 @@ fun ActivitasPertama(modifier: Modifier){
             )
         ){
             Row() {
-                val gambar = painterResource(id = R.drawable.logoUMY)
+                val gambar = painterResource(id = R.drawable.logoumy)
                 Image(
                     painter = gambar,
                     contentDescription = null,
@@ -89,10 +89,10 @@ fun ActivitasPertama(modifier: Modifier){
                                     .align(Alignment.BottomCenter)
                                     .padding(bottom = 50.dp)
                             )
-                        }
-                    }
                 }
+        }
     }
+}
 
 
 

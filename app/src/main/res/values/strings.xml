@@ -5,4 +5,14 @@
     <string name="nama">Lunaru</string>
     <string name="alamat">Turi, Sleman</string>
     <string name="copy">copyright, 2025</string>
+
+    <string name="name">Luna</string>
+    <string name="usn">\@luna2112</string>
+    <string name="bio">Saya seorang Back End Dev</string>
+    <string name="privacy">Privacy</string>
+    <string name="history">Riwayat Transaksi</string>
+    <string name="settings">Pengaturan</string>
+    <string name="copyr">© 2025 Lunaru</string>
+    <string name="imagedesc">Foto Profil</string>
+    <string name="next">Lanjutkan</string>
 </resources>
