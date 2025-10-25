@@ -53,7 +53,8 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             SocialIcon(iconResId = R.drawable.linkedin) // Diperbaiki
         }
 
+        Spacer(modifier = Modifier.height(16.dp))
 
-    }
+
 }
 
