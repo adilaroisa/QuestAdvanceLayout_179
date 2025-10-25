@@ -32,6 +32,15 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             .padding(horizontal = 24.dp, vertical = 40.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Image(
+            painter = painterResource(id = R.drawable.luna), // Diperbaiki
+            contentDescription = stringResource(id = R.string.imagedesc), // Diperbaiki
+            modifier = Modifier
+                .size(120.dp)
+                .clip(CircleShape),
+            contentScale = ContentScale.Crop
+        )
+
 
 }
 
