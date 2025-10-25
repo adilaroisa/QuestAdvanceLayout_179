@@ -41,6 +41,8 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             contentScale = ContentScale.Crop
         )
 
+        Spacer(modifier = Modifier.height(24.dp))
+
 
 }
 
