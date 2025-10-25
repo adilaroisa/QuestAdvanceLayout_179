@@ -91,3 +91,16 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
     }
 }
 
+@Composable
+fun SocialIcon(@DrawableRes iconResId: Int) {
+    Image(
+        painter = painterResource(id = iconResId),
+        contentDescription = "Social Media Icon",
+        contentScale = ContentScale.Fit, // Ini penting agar ikon tidak terpotong
+        modifier = Modifier
+            .size(40.dp)
+    )
+}
+
+
+
