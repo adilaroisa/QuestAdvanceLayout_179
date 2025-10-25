@@ -55,6 +55,11 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-
+        Text(
+            text = stringResource(id = R.string.name), // Diperbaiki
+            color = Color.White,
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold
+        )
 }
 
