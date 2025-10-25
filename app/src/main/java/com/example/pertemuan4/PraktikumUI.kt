@@ -43,6 +43,17 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(24.dp))
 
+        Row(
+            horizontalArrangement = Arrangement.spacedBy(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            SocialIcon(iconResId = R.drawable.facebook)
+            SocialIcon(iconResId = R.drawable.telegram) // Diperbaiki
+            SocialIcon(iconResId = R.drawable.insta) // Diperbaiki
+            SocialIcon(iconResId = R.drawable.linkedin) // Diperbaiki
+        }
 
+
+    }
 }
 
