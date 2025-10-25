@@ -61,5 +61,33 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold
         )
+        Text(
+            text = stringResource(id = R.string.usn), // Diperbaiki
+            color = Color.Gray,
+            fontSize = 16.sp
+        )
+        Spacer(modifier = Modifier.height(8.dp))
+        Text(
+            text = stringResource(id = R.string.bio),
+            color = Color.Gray,
+            fontSize = 16.sp
+        )
+
+        Spacer(modifier = Modifier.height(32.dp))
+
+        Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
+            MenuItem(iconResId = R.drawable.privasi, text = stringResource(id = R.string.privacy))
+            MenuItem(iconResId = R.drawable.riwayat, text = stringResource(id = R.string.history))
+            MenuItem(iconResId = R.drawable.setting, text = stringResource(id = R.string.settings))
+        }
+
+        Spacer(Modifier.weight(1f))
+
+        Text(
+            text = stringResource(id = R.string.copyr),
+            color = Color.Gray,
+            fontSize = 12.sp
+        )
+    }
 }
 
