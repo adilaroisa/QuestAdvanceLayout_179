@@ -29,12 +29,14 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
         modifier = modifier
             .fillMaxSize()
             .background(Color.Black)
-            .padding(horizontal = 24.dp, vertical = 40.dp),
+            .padding(horizontal = 24.dp, vertical = 30.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Spacer(modifier = Modifier.height(30.dp))
+
         Image(
-            painter = painterResource(id = R.drawable.luna), // Diperbaiki
-            contentDescription = stringResource(id = R.string.imagedesc), // Diperbaiki
+            painter = painterResource(id = R.drawable.luna),
+            contentDescription = stringResource(id = R.string.imagedesc),
             modifier = Modifier
                 .size(120.dp)
                 .clip(CircleShape),
@@ -48,21 +50,21 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             verticalAlignment = Alignment.CenterVertically
         ) {
             SocialIcon(iconResId = R.drawable.facebook)
-            SocialIcon(iconResId = R.drawable.telegram) // Diperbaiki
-            SocialIcon(iconResId = R.drawable.insta) // Diperbaiki
-            SocialIcon(iconResId = R.drawable.linkedin) // Diperbaiki
+            SocialIcon(iconResId = R.drawable.telegram)
+            SocialIcon(iconResId = R.drawable.insta)
+            SocialIcon(iconResId = R.drawable.linkedin)
         }
 
         Spacer(modifier = Modifier.height(16.dp))
 
         Text(
-            text = stringResource(id = R.string.name), // Diperbaiki
+            text = stringResource(id = R.string.name),
             color = Color.White,
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold
         )
         Text(
-            text = stringResource(id = R.string.usn), // Diperbaiki
+            text = stringResource(id = R.string.usn),
             color = Color.Gray,
             fontSize = 16.sp
         )
@@ -126,7 +128,7 @@ fun MenuItem(@DrawableRes iconResId: Int, text: String) {
                 modifier = Modifier.weight(1f)
             )
             Image(
-                painter = painterResource(id = R.drawable.next), // Diperbaiki
+                painter = painterResource(id = R.drawable.next),
                 contentDescription = stringResource(id = R.string.next),
                 modifier = Modifier.size(24.dp)
             )
